@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\IcenFireController;
+use App\Http\Controllers\API\BooksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('external-books', IcenFireController::class);
+Route::group(['prefix' => 'v1'], function () {
+    Route::apiResource('books', BooksController::class);
+});
