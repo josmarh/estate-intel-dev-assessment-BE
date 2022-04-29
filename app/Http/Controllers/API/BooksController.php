@@ -158,20 +158,5 @@ class BooksController extends Controller
         }
         
     }
-}
-
-// Git clone
-// cp .env-example to .env
-// Generate secret-key
-// Create Database
-// Run php artisan migrate
-// Run php artisan serve
-// Open postman to test 
-// Create book - POST http://127.0.0.1:8000/api/v1/books
-// Get all books - GET http://127.0.0.1:8000/api/v1/books
-// Get a specific books - GET http://127.0.0.1:8000/api/v1/books/1
-// Filter books, by name, country, publisher, release date - 
-//      http://127.0.0.1:8000/api/v1/books?name=:bookname, ?country=:countryname, ?publisher=:publishername, ?releasedate=:releasedate
-// Update book - PUT http://127.0.0.1:8000/api/v1/books/1
-// Delete book - DELETE http://127.0.0.1:8000/api/v1/books/1 
+} 
 

@@ -46,6 +46,3 @@ class IcenFireController extends Controller
         return $response;
     }
 }
-
-// Get all books: http://localhost:8000/api/external-books
-// Get specific book: http://localhost:8000/api/external-books?name=:nameOfABook

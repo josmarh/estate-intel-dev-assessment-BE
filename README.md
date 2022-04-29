@@ -5,15 +5,16 @@ This application was developed with Laravel 9, PHP 8.x
 
 ## Installation
 * Clone Repository `git clone https://github.com/Eric-Josh/estate-intel-dev-assessment-BE`
-`cd estate-intel-dev-assessment-BE`
+* Move into project path `cd estate-intel-dev-assessment-BE`
 * Install all dependencies `composer install or composer update`
 * Create DB
 * Copy .env.example to .env `cp .env.example .env`
-* Copy .env.example to .env `cp .env.example .env`
 * Generate APP_KEY `php artisan key:generate`
+* Add DB details in .env
 * Run Migration `php artisan migrate`
 * Run app `php artisan serve`
 
+## Docs
 A REST API that calls an external API service to get information about books.
 
 The external API that is being used here is the [Ice And Fire API](https://anapioficeandfire.com/Documentation#books). This API requires no sign up /authentication on your part.
