@@ -1,5 +1,18 @@
-## Books API
+# Books API
 
+## Build
+This application was developed with Laravel 9, PHP 8.x
+
+## Installation
+* Clone Repository `git clone https://github.com/Eric-Josh/estate-intel-dev-assessment-BE`
+`cd estate-intel-dev-assessment-BE`
+* Install all dependencies `composer install or composer update`
+* Create DB
+* Copy .env.example to .env `cp .env.example .env`
+* Copy .env.example to .env `cp .env.example .env`
+* Generate APP_KEY `php artisan key:generate`
+* Run Migration `php artisan migrate`
+* Run app `php artisan serve`
 
 A REST API that calls an external API service to get information about books.
 
@@ -21,6 +34,7 @@ is requested with the following data:
 * number_of_pages
 * publisher
 * release_date
+
 a book is created in the local database.
 
 When the <strong>READ</strong> endpoint:
@@ -39,6 +53,7 @@ is requested with any of the following form data:
 * number_of_pages
 * publisher
 * release_date
+
 and a specific <strong>:id</strong> in the URL, where <strong>:id</strong> is a placeholder variable for an integer. The specific book would be updated in the database.
 
 When the <strong>DELETE</strong> endpoint:
