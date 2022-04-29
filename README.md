@@ -15,6 +15,9 @@ This application was developed with Laravel 9, PHP 8.x
 * Run app `php artisan serve`
 
 ## Docs
+Two API's service was implemented, External and Internal API.
+
+<strong>External API</strong>
 A REST API that calls an external API service to get information about books.
 
 The external API that is being used here is the [Ice And Fire API](https://anapioficeandfire.com/Documentation#books). This API requires no sign up /authentication on your part.
@@ -23,6 +26,7 @@ When the endpoint:
 `GET /api/external-books?name=:nameOfABook`
 is requested, the application queries the Ice And Fire API and use the data received to respond with precisely JSON result
 
+<strong>Internal API</strong>
 A simple CRUD (Create, Read, Update, Delete) API with a local database
 
 When the <strong>CREATE</strong> endpoint:
